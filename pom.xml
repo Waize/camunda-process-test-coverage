@@ -71,17 +71,7 @@
                 <artifactId>operaton-bom</artifactId>
                 <version>${operaton.version}</version>
                 <scope>import</scope>
-                <type>bom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.operaton.bpm</groupId>
-                <artifactId>operaton-engine</artifactId>
-                <version>${operaton.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.operaton.bpm</groupId>
-                <artifactId>operaton-engine-spring</artifactId>
-                <version>${operaton.version}</version>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
