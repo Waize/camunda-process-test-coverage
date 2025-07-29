@@ -22,12 +22,12 @@ package org.operaton.community.process_test_coverage.examples.jgiven.platform7;
 
 import com.tngtech.jgiven.annotation.ScenarioState;
 import com.tngtech.jgiven.junit.ScenarioTest;
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.test.Deployment;
-import org.camunda.bpm.engine.test.ProcessEngineRule;
-import org.camunda.bpm.engine.test.assertions.bpmn.AbstractAssertions;
-import org.camunda.bpm.engine.test.assertions.bpmn.BpmnAwareTests;
-import org.camunda.bpm.engine.variable.impl.VariableMapImpl;
+import org.operaton.bpm.engine.ProcessEngine;
+import org.operaton.bpm.engine.test.Deployment;
+import org.operaton.bpm.engine.test.ProcessEngineRule;
+import org.operaton.bpm.engine.test.assertions.bpmn.AbstractAssertions;
+import org.operaton.bpm.engine.test.assertions.bpmn.BpmnAwareTests;
+import org.operaton.bpm.engine.variable.impl.VariableMapImpl;
 import org.operaton.community.process_test_coverage.spring_test.platform7.ProcessEngineCoverageTestExecutionListener;
 import org.junit.BeforeClass;
 import org.junit.Rule;

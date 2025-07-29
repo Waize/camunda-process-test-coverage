@@ -20,7 +20,7 @@ package org.operaton.community.process_test_coverage.examples.junit5.platform7;
  * #L%
  */
 
-import org.camunda.bpm.engine.ProcessEngineConfiguration;
+import org.operaton.bpm.engine.ProcessEngineConfiguration;
 import org.operaton.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration;
 import org.operaton.community.process_test_coverage.junit5.platform7.ProcessEngineCoverageExtension;
 

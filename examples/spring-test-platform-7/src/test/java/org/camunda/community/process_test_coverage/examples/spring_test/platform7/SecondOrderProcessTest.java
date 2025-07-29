@@ -20,15 +20,15 @@ package org.operaton.community.process_test_coverage.examples.spring_test.platfo
  * #L%
  */
 
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.operaton.bpm.engine.RuntimeService;
+import org.operaton.bpm.engine.runtime.ProcessInstance;
 import org.operaton.community.process_test_coverage.spring_test.platform7.ProcessEngineCoverageConfiguration;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 
-import static org.camunda.bpm.engine.test.assertions.bpmn.BpmnAwareTests.*;
+import static org.operaton.bpm.engine.test.assertions.bpmn.BpmnAwareTests.*;
 
 @SpringBootTest
 @Import({CoverageTestConfiguration.class, ProcessEngineCoverageConfiguration.class})

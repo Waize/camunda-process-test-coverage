@@ -1,9 +1,9 @@
 package org.operaton.community.process_test_coverage.tests.junit4.platform7.model;
 
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.task.Task;
-import org.camunda.bpm.engine.test.Deployment;
-import org.camunda.bpm.engine.variable.Variables;
+import org.operaton.bpm.engine.TaskService;
+import org.operaton.bpm.engine.task.Task;
+import org.operaton.bpm.engine.test.Deployment;
+import org.operaton.bpm.engine.variable.Variables;
 import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule;
 import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
 import org.junit.ClassRule;

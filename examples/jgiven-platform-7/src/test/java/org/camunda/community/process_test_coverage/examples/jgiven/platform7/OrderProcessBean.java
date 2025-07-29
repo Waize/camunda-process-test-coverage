@@ -20,8 +20,8 @@ package org.operaton.community.process_test_coverage.examples.jgiven.platform7;
  * #L%
  */
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.operaton.bpm.engine.ProcessEngine;
+import org.operaton.bpm.engine.runtime.ProcessInstance;
 
 import java.util.function.Supplier;
 

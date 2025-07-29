@@ -28,13 +28,13 @@
         </dependency>
 
         <dependency>
-            <groupId>org.camunda.bpm</groupId>
-            <artifactId>camunda-engine</artifactId>
+            <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-engine</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.camunda.bpm</groupId>
-            <artifactId>camunda-engine-spring</artifactId>
+            <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-engine-spring</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -43,12 +43,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.camunda.bpm.springboot</groupId>
+            <groupId>org.operaton.bpm.springboot</groupId>
             <artifactId>camunda-bpm-spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.camunda.bpm.springboot</groupId>
+            <groupId>org.operaton.bpm.springboot</groupId>
             <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
             <scope>test</scope>
         </dependency>

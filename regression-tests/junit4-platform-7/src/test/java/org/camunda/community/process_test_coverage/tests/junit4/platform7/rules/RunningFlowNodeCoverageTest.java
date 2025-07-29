@@ -1,9 +1,9 @@
 package org.operaton.community.process_test_coverage.tests.junit4.platform7.rules;
 
-import org.camunda.bpm.engine.ProcessEngineException;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.bpm.engine.task.Task;
-import org.camunda.bpm.engine.test.Deployment;
+import org.operaton.bpm.engine.ProcessEngineException;
+import org.operaton.bpm.engine.runtime.ProcessInstance;
+import org.operaton.bpm.engine.task.Task;
+import org.operaton.bpm.engine.test.Deployment;
 import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule;
 import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
 import org.junit.Rule;

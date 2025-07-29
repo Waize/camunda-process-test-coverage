@@ -19,7 +19,7 @@
  */
 package org.operaton.community.process_test_coverage.spring_test.platform7
 
-import org.camunda.bpm.engine.ProcessEngine
+import org.operaton.bpm.engine.ProcessEngine
 import org.operaton.community.process_test_coverage.core.model.DefaultCollector
 import org.operaton.community.process_test_coverage.engine.platform7.ExecutionContextModelProvider
 import org.operaton.community.process_test_coverage.engine.platform7.ProcessEngineAdapter

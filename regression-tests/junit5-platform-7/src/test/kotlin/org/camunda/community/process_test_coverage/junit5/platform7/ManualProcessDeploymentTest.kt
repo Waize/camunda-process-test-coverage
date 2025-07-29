@@ -1,8 +1,8 @@
 package org.operaton.community.process_test_coverage.junit5.platform7
 
-import org.camunda.bpm.engine.TaskService
-import org.camunda.bpm.engine.test.Deployment
-import org.camunda.bpm.engine.variable.Variables
+import org.operaton.bpm.engine.TaskService
+import org.operaton.bpm.engine.test.Deployment
+import org.operaton.bpm.engine.variable.Variables
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.RegisterExtension

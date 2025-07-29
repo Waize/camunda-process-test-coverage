@@ -20,9 +20,9 @@ package org.operaton.community.process_test_coverage.examples.jgiven.platform7;
  * #L%
  */
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl;
-import org.camunda.bpm.spring.boot.starter.test.helper.StandaloneInMemoryTestConfiguration;
+import org.operaton.bpm.engine.ProcessEngine;
+import org.operaton.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl;
+import org.operaton.bpm.spring.boot.starter.test.helper.StandaloneInMemoryTestConfiguration;
 import org.operaton.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
