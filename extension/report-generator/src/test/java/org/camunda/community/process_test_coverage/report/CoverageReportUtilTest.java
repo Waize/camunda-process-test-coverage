@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.report;
+package org.operaton.community.process_test_coverage.report;
 
 /*-
  * #%L
@@ -21,7 +21,7 @@ package org.camunda.community.process_test_coverage.report;
  */
 
 import junit.framework.TestCase;
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil;
+import org.operaton.community.process_test_coverage.report.CoverageReportUtil;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

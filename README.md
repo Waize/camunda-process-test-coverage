@@ -37,13 +37,13 @@ If you are interested in further documentation, please check our [Documentation 
 
 ## Installation
 
-Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.camunda.community.process_test_coverage/camunda-process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.camunda.community.process_test_coverage/camunda-process-test-coverage-bom/badge.svg" align="right" /></a>
+Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/camunda-process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/camunda-process-test-coverage-bom/badge.svg" align="right" /></a>
 
 ### JUnit5 (Platform 7 or Platform 8)
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
   <artifactId>camunda-process-test-coverage-junit5-platform-7</artifactId>
   <!-- <artifactId>camunda-process-test-coverage-junit5-platform-8</artifactId> -->
   <version>${camunda-process-test-coverage.version}</version>
@@ -57,7 +57,7 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 
 ```xml
 <bean id="processEngineConfiguration"
-   class="org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
+   class="org.operaton.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
    ...
 </bean>
 ```

@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.report;
+package org.operaton.community.process_test_coverage.report;
 
 /*-
  * #%L

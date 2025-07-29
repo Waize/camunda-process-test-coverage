@@ -1,8 +1,8 @@
-package org.camunda.community.process_test_coverage.tests.junit4.platform7.rules;
+package org.operaton.community.process_test_coverage.tests.junit4.platform7.rules;
 
 import org.camunda.bpm.engine.test.Deployment;
-import org.camunda.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule;
-import org.camunda.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
+import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule;
+import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.*;
 public class MethodCoverageTest {
 
 	private static final String PROCESS_DEFINITION_KEY = "process-test-coverage";
-	
+
 	@Rule
 	public TestCoverageProcessEngineRule rule = TestCoverageProcessEngineRuleBuilder.create()
 			.withDetailedCoverageLogging().build();
@@ -25,11 +25,11 @@ public class MethodCoverageTest {
 	@Test
 	@Deployment(resources = "process.bpmn")
 	public void testCoverageWhenRunningPathAShouldReportSevenOutOfElevenElementsCovered() {
-		
+
 	    Map<String, Object> variables = new HashMap<String, Object>();
 		variables.put("path", "A");
 		rule.getRuntimeService().startProcessInstanceByKey(PROCESS_DEFINITION_KEY, variables);
-		
+
 		rule.addTestMethodCoverageAssertionMatcher("testCoverageWhenRunningPathAShouldReportSevenOutOfElevenElementsCovered", greaterThan(6.9 / 11.0));
 	    rule.addTestMethodCoverageAssertionMatcher("testCoverageWhenRunningPathAShouldReportSevenOutOfElevenElementsCovered", lessThan(7.1 / 11.0));
 
@@ -41,7 +41,7 @@ public class MethodCoverageTest {
 		Map<String, Object> variables = new HashMap<String, Object>();
 		variables.put("path", "B");
 		rule.getRuntimeService().startProcessInstanceByKey(PROCESS_DEFINITION_KEY, variables);
-		
+
 		rule.addTestMethodCoverageAssertionMatcher("testCoverageWhenRunningPathBShouldReportSevenOutOfElevenElementsCovered", greaterThan(6.9 / 11.0));
         rule.addTestMethodCoverageAssertionMatcher("testCoverageWhenRunningPathBShouldReportSevenOutOfElevenElementsCovered", lessThan(7.1 / 11.0));
 	}

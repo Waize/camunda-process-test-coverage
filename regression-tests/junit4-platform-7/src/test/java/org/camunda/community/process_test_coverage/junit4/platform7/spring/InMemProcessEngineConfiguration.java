@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit4.platform7.spring;
+package org.operaton.community.process_test_coverage.junit4.platform7.spring;
 
 import java.lang.reflect.Method;
 
@@ -10,7 +10,7 @@ import org.camunda.bpm.engine.impl.el.ExpressionManager;
 import org.camunda.bpm.engine.spring.ProcessEngineFactoryBean;
 import org.camunda.bpm.engine.spring.SpringExpressionManager;
 import org.camunda.bpm.engine.spring.SpringProcessEngineConfiguration;
-import org.camunda.community.process_test_coverage.junit4.platform7.spring.SpringProcessWithCoverageEngineConfiguration;
+import org.operaton.community.process_test_coverage.junit4.platform7.spring.SpringProcessWithCoverageEngineConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.camunda.community</groupId>
-        <artifactId>community-hub-release-parent</artifactId>
-        <version>2.0.1</version>
-        <relativePath />
-    </parent>
 
-    <groupId>org.camunda.community.process_test_coverage</groupId>
-    <artifactId>camunda-process-test-coverage-root</artifactId>
+    <groupId>org.operaton.community.process_test_coverage</groupId>
+    <artifactId>operaton-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
-    <version>2.8.2-SNAPSHOT</version>
+    <version>1.0.0-beta-5-SNAPSHOT</version>
 
-    <name>Camunda Process Test Coverage Root</name>
+    <name>Operaton Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.
     </description>
     <url>https://github.com/camunda-community-hub/camunda-process-test-coverage/</url>
@@ -21,7 +15,7 @@
         <system>github</system>
         <url>https://github.com/camunda-community-hub/camunda-process-test-coverage/issues</url>
     </issueManagement>
-    <inceptionYear>2019</inceptionYear>
+    <inceptionYear>2025</inceptionYear>
 
     <modules>
         <module>bom</module>
@@ -34,15 +28,10 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kotlin-logging.version>7.0.4</kotlin-logging.version>
 
-        <!--
-        For backwards compatibility we pin the version to compile to Camunda 7.20.
-        -->
-        <camunda.compile.version>7.20.0</camunda.compile.version>
-        <zeebe-process-test.version>8.4.5</zeebe-process-test.version>
-        <spring-zeebe.version>8.3.6</spring-zeebe.version>
         <spring-boot.version>3.1.12</spring-boot.version>
 
         <mockito-kotlin.version>5.4.0</mockito-kotlin.version>
+        <operaton.version>1.0.0-beta-4</operaton.version>
     </properties>
 
     <dependencyManagement>
@@ -76,40 +65,24 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Camunda 7 -->
+            <!-- Operaton -->
             <dependency>
-                <groupId>org.camunda.bpm</groupId>
-                <artifactId>camunda-bom</artifactId>
-                <version>${camunda.compile.version}</version>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-bom</artifactId>
+                <version>${operaton.version}</version>
                 <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-
-            <!-- Camunda 8: Zeebe Process Test -->
-            <dependency>
-                <groupId>io.camunda</groupId>
-                <artifactId>zeebe-process-test-assertions</artifactId>
-                <scope>provided</scope>
-                <version>${zeebe-process-test.version}</version>
+                <type>bom</type>
             </dependency>
             <dependency>
-                <groupId>io.camunda</groupId>
-                <artifactId>zeebe-process-test-extension-testcontainer</artifactId>
-                <version>${zeebe-process-test.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <!-- Camunda 8: Spring Zeebe -->
-            <dependency>
-                <groupId>io.camunda.spring</groupId>
-                <artifactId>spring-boot-starter-camunda</artifactId>
-                <version>${spring-zeebe.version}</version>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-engine</artifactId>
+                <version>${operaton.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.camunda.spring</groupId>
-                <artifactId>spring-boot-starter-camunda-test-testcontainer</artifactId>
-                <version>${spring-zeebe.version}</version>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-engine-spring</artifactId>
+                <version>${operaton.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 

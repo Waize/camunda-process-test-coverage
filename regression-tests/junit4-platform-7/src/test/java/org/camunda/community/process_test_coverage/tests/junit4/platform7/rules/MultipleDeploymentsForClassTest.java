@@ -1,9 +1,9 @@
-package org.camunda.community.process_test_coverage.tests.junit4.platform7.rules;
+package org.operaton.community.process_test_coverage.tests.junit4.platform7.rules;
 
 import org.camunda.bpm.engine.test.Deployment;
-import org.camunda.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule;
-import org.camunda.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil;
+import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule;
+import org.operaton.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
+import org.operaton.community.process_test_coverage.report.CoverageReportUtil;
 import org.junit.ClassRule;
 import org.junit.Ignore;
 import org.junit.Rule;

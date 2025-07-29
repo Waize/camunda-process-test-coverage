@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <artifactId>camunda-process-test-coverage-regression-tests-parent</artifactId>
-        <version>2.8.2-SNAPSHOT</version>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <artifactId>operaton-process-test-coverage-regression-tests-parent</artifactId>
+        <version>1.0.0-beta-5-SNAPSHOT</version>
     </parent>
 
-    <artifactId>camunda-process-test-coverage-regression-tests-spring-starter-platform-7</artifactId>
+    <artifactId>operaton-process-test-coverage-regression-tests-spring-starter-platform-7</artifactId>
     <name>Camunda Process Test Coverage Regression Test Spring Starter Platform 7</name>
     <description>
         All library tests are here in order to allow compiling against Camunda Platform 7 release and regression testing against different versions.
@@ -18,12 +18,12 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>camunda-process-test-coverage-core</artifactId>
+            <artifactId>operaton-process-test-coverage-core</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>camunda-process-test-coverage-starter-platform-7</artifactId>
+            <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
             <scope>test</scope>
         </dependency>
 

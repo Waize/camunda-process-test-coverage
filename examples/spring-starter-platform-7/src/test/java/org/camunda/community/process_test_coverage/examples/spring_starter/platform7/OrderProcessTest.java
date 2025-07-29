@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.spring_starter.platform7;
+package org.operaton.community.process_test_coverage.examples.spring_starter.platform7;
 
 /*-
  * #%L
@@ -22,7 +22,7 @@ package org.camunda.community.process_test_coverage.examples.spring_starter.plat
 
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.community.process_test_coverage.core.engine.ExcludeFromProcessCoverage;
+import org.operaton.community.process_test_coverage.core.engine.ExcludeFromProcessCoverage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

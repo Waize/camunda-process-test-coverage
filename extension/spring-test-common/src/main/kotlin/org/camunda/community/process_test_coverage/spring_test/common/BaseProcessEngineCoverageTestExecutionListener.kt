@@ -7,9 +7,9 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,16 +17,16 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.spring_test.common
+package org.operaton.community.process_test_coverage.spring_test.common
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.assertj.core.api.Assertions
 import org.assertj.core.api.Condition
-import org.camunda.community.process_test_coverage.core.engine.isExcluded
-import org.camunda.community.process_test_coverage.core.model.DefaultCollector
-import org.camunda.community.process_test_coverage.core.model.Run
-import org.camunda.community.process_test_coverage.core.model.Suite
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil
+import org.operaton.community.process_test_coverage.core.engine.isExcluded
+import org.operaton.community.process_test_coverage.core.model.DefaultCollector
+import org.operaton.community.process_test_coverage.core.model.Run
+import org.operaton.community.process_test_coverage.core.model.Suite
+import org.operaton.community.process_test_coverage.report.CoverageReportUtil
 import org.springframework.beans.factory.NoSuchBeanDefinitionException
 import org.springframework.core.Ordered
 import org.springframework.test.context.TestContext

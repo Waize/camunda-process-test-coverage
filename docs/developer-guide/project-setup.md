@@ -6,7 +6,7 @@ To get sources of the project, please execute:
 
 ```sh
 git clone https://github.com/camunda-community-hub/camunda-process-test-coverage.git
-cd camunda-process-test-coverage
+cd operaton-process-test-coverage
 ```
 
 We are using gitflow in our git SCM for naming branches. That means that you should start from `develop` branch,

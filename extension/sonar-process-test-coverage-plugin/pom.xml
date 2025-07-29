@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>camunda-process-test-coverage-parent</artifactId>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <version>2.8.2-SNAPSHOT</version>
+        <artifactId>operaton-process-test-coverage-parent</artifactId>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <version>1.0.0-beta-5-SNAPSHOT</version>
     </parent>
-    <name>Camunda Process Test Coverage Sonar Plugin</name>
-    <artifactId>sonar-camunda-process-test-coverage-plugin</artifactId>
+    <name>Operaton Process Test Coverage Sonar Plugin</name>
+    <artifactId>sonar-operaton-process-test-coverage-plugin</artifactId>
     <packaging>sonar-plugin</packaging>
     <properties>
         <sonar-plugin-api.version>10.14.0.2599</sonar-plugin-api.version>
@@ -21,12 +21,12 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.camunda.community.process_test_coverage</groupId>
-            <artifactId>camunda-process-test-coverage-core</artifactId>
+            <groupId>org.operaton.community.process_test_coverage</groupId>
+            <artifactId>operaton-process-test-coverage-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.camunda.bpm.model</groupId>
-            <artifactId>camunda-bpmn-model</artifactId>
+            <groupId>org.operaton.bpm.model</groupId>
+            <artifactId>operaton-bpmn-model</artifactId>
         </dependency>
 
         <dependency>
@@ -61,8 +61,8 @@
                 <configuration>
                     <artifactItems>
                         <artifactItem>
-                            <groupId>org.camunda.community.process_test_coverage</groupId>
-                            <artifactId>camunda-process-test-coverage-report-generator</artifactId>
+                            <groupId>org.operaton.community.process_test_coverage</groupId>
+                            <artifactId>operaton-process-test-coverage-report-generator</artifactId>
                             <version>${project.version}</version>
                             <outputDirectory>target/classes</outputDirectory>
                             <includes>**/*.js,**/*.css,**/*.html</includes>
@@ -86,9 +86,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <pluginKey>processtestcoverage</pluginKey>
-                    <pluginClass>org.camunda.community.process_test_coverage.sonar.ProcessTestCoveragePlugin</pluginClass>
-                    <pluginSourcesUrl>https://github.com/camunda-community-hub/camunda-process-test-coverage</pluginSourcesUrl>
-                    <pluginIssueTrackerUrl>https://github.com/camunda-community-hub/camunda-process-test-coverage/issues</pluginIssueTrackerUrl>
+                    <pluginClass>org.operaton.community.process_test_coverage.sonar.ProcessTestCoveragePlugin</pluginClass>
+                    <pluginSourcesUrl>https://github.com/camunda-community-hub/operaton-process-test-coverage</pluginSourcesUrl>
+                    <pluginIssueTrackerUrl>https://github.com/camunda-community-hub/operaton-process-test-coverage/issues</pluginIssueTrackerUrl>
                     <pluginApiMinVersion>9.9</pluginApiMinVersion>
                 </configuration>
             </plugin>

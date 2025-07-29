@@ -9,7 +9,7 @@ site_name: Camunda Process Test Coverage
 site_url: https://camunda-community-hub.github.io/camunda-process-test-coverage/
 site_author: Camunda OSS Developers
 site_description: >-
-  This Camunda Platform 7 and Platform 8 ommunity extension visualises test process
+  This Camunda Platform 7 community extension visualises test process
   paths and checks your process model coverage ratio. Running  typical
   tests now leaves html files in your build output.
 

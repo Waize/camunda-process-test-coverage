@@ -39,7 +39,7 @@ possible to configure the output directory for the aggregation report inside the
 
 ```xml
 <plugin>
-    <groupId>org.camunda.community.process_test_coverage</groupId>
+    <groupId>org.operaton.community.process_test_coverage</groupId>
     <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
     <version>@project.version@</version>
     <executions>
@@ -65,7 +65,7 @@ This can be done via an extension setting in the gradle build file.
 
 ```groovy
 plugins {
-    id 'org.camunda.community.process_test_coverage.report-aggregator'
+    id 'org.operaton.community.process_test_coverage.report-aggregator'
 }
 
 aggregateProcessTestCoverage {

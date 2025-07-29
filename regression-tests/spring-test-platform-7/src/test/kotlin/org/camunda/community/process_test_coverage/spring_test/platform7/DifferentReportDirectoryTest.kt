@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.spring_test.platform7
+package org.operaton.community.process_test_coverage.spring_test.platform7
 
 import org.camunda.bpm.engine.RuntimeService
 import org.junit.jupiter.api.Disabled

@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit5.platform7
+package org.operaton.community.process_test_coverage.junit5.platform7
 
 import org.assertj.core.api.HamcrestCondition
 import org.camunda.bpm.engine.test.Deployment

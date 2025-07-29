@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.spring_test.platform7;
+package org.operaton.community.process_test_coverage.examples.spring_test.platform7;
 
 /*-
  * #%L

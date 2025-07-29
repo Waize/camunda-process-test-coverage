@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.report;
+package org.operaton.community.process_test_coverage.report;
 
 /*-
  * #%L
@@ -9,9 +9,9 @@ package org.camunda.community.process_test_coverage.report;
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -20,9 +20,9 @@ package org.camunda.community.process_test_coverage.report;
  * #L%
  */
 
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter;
-import org.camunda.community.process_test_coverage.core.model.DefaultCollector;
-import org.camunda.community.process_test_coverage.core.model.Suite;
+import org.operaton.community.process_test_coverage.core.export.CoverageStateJsonExporter;
+import org.operaton.community.process_test_coverage.core.model.DefaultCollector;
+import org.operaton.community.process_test_coverage.core.model.Suite;
 
 import java.io.*;
 import java.net.URL;
@@ -52,7 +52,7 @@ public class CoverageReportUtil {
     /**
      * Root directory for all coverage reports.
      */
-    public static String TARGET_DIR_ROOT = System.getProperty("camunda-process-test-coverage.target-dir-root", "target/process-test-coverage/");
+    public static String TARGET_DIR_ROOT = System.getProperty("operaton-process-test-coverage.target-dir-root", "target/process-test-coverage/");
     public static final String REPORT_RESOURCES = "static";
     private static final String REPORT_TEMPLATE = "html/bpmn.report-template.html";
 
