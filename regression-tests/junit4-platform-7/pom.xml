@@ -9,9 +9,9 @@
     </parent>
 
     <artifactId>operaton-process-test-coverage-regression-tests-junit4-platform-7</artifactId>
-    <name>Camunda Process Test Coverage Regression Test JUnit4 Platform 7</name>
+    <name>Operatom Process Test Coverage Regression Test JUnit4 Platform 7</name>
     <description>
-        All library tests are here in order to allow compiling against Camunda Platform 7 release and regression testing against different versions.
+        All library tests are here in order to allow compiling against Operaton release and regression testing against different versions.
     </description>
 
     <dependencies>

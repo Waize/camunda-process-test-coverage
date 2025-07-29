@@ -9,7 +9,7 @@
         <version>1.0.0-beta-5-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Regression Tests Parent</name>
+    <name>Operaton Process Test Coverage Regression Tests Parent</name>
     <artifactId>operaton-process-test-coverage-regression-tests-parent</artifactId>
     <packaging>pom</packaging>
 

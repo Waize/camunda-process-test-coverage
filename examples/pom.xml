@@ -8,7 +8,7 @@
         <version>1.0.0-beta-5-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Examples Parent</name>
+    <name>Operaton Process Test Coverage Examples Parent</name>
     <artifactId>operaton-process-test-coverage-examples-parent</artifactId>
     <packaging>pom</packaging>
 
@@ -24,7 +24,6 @@
     <modules>
         <module>junit4-platform-7</module>
         <module>junit5-platform-7</module>
-        <module>jgiven-platform-7</module>
         <module>spring-test-platform-7</module>
         <module>spring-starter-platform-7</module>
     </modules>

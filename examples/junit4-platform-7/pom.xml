@@ -7,7 +7,7 @@
         <version>1.0.0-beta-5-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Example JUnit4 Platform 7</name>
+    <name>Operaton Process Test Coverage Example JUnit4 Platform 7</name>
     <artifactId>operaton-process-test-coverage-examples-junit4-platform-7</artifactId>
 
     <dependencies>
@@ -27,7 +27,7 @@
         <!-- Test Dependencies -->
         <dependency>
             <groupId>org.operaton.bpm</groupId>
-            <artifactId>camunda-bpm-assert</artifactId>
+            <artifactId>operaton-bpm-assert</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

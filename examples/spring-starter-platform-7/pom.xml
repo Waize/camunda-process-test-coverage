@@ -7,13 +7,13 @@
         <version>1.0.0-beta-5-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Example Spring-Testing with starter Platform 7</name>
+    <name>Operaton Process Test Coverage Example Spring-Testing with starter Platform 7</name>
     <artifactId>operaton-process-test-coverage-examples-spring-starter-platform-7</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.operaton.bpm.springboot</groupId>
-            <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
+            <artifactId>operaton-bpm-spring-boot-starter-rest</artifactId>
         </dependency>
 
         <dependency>
