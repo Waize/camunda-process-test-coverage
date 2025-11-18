@@ -17,6 +17,7 @@
             <groupId>org.operaton.bpm</groupId>
             <artifactId>operaton-engine</artifactId>
             <scope>provided</scope>
+            <classifier>junit5</classifier>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
