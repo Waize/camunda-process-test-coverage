@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.operaton.community.process_test_coverage</groupId>
         <artifactId>operaton-process-test-coverage-root</artifactId>
-        <version>1.0.0-beta-5-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <name>Operaton Process Test Coverage Examples Parent</name>

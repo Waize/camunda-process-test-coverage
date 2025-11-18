@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.operaton.community.process_test_coverage</groupId>
         <artifactId>operaton-process-test-coverage-regression-tests-parent</artifactId>
-        <version>1.0.0-beta-5-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>operaton-process-test-coverage-regression-tests-junit5-platform-7</artifactId>
