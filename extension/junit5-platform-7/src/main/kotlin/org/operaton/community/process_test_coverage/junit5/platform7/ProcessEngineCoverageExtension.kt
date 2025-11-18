@@ -32,6 +32,7 @@ import org.operaton.community.process_test_coverage.junit5.common.ProcessEngineC
 import org.junit.jupiter.api.extension.AfterAllCallback
 import org.junit.jupiter.api.extension.BeforeAllCallback
 import org.junit.jupiter.api.extension.ExtensionContext
+import org.operaton.bpm.engine.ProcessEngine
 
 private val logger = KotlinLogging.logger {}
 
@@ -70,6 +71,8 @@ class ProcessEngineCoverageExtension(
         fun builder(configurationResource: String) = Builder(configurationResource = configurationResource)
         @JvmStatic
         fun builder(processEngineConfiguration: ProcessEngineConfiguration) = Builder(processEngineConfiguration = processEngineConfiguration)
+        @JvmStatic
+        fun builder(processEngine: ProcessEngine) = Builder(processEngine = processEngine)
     }
 
     /**
@@ -143,6 +146,7 @@ class ProcessEngineCoverageExtension(
     data class Builder(
         var configurationResource: String? = null,
         val processEngineConfiguration: ProcessEngineConfiguration? = null,
+        val processEngine: ProcessEngine? = null
     ) : ProcessEngineCoverageExtensionBuilder<ProcessEngineCoverageExtension>() {
 
         /**
@@ -175,7 +179,10 @@ class ProcessEngineCoverageExtension(
                 }
                 this@Builder.coverageAtLeast?.let { addClassCoverageAtLeast(it) }
                 this@Builder.configurationResource?.let { this.configurationResource(it) }
-                if (this@Builder.processEngineConfiguration != null) {
+                if (this@Builder.processEngine != null){
+                    processEngine = this@Builder.processEngine;
+                    processEngineConfiguration = processEngine.processEngineConfiguration as ProcessEngineConfigurationImpl
+                } else if (this@Builder.processEngineConfiguration != null) {
                     processEngine = this@Builder.processEngineConfiguration.buildProcessEngine()
                     processEngineConfiguration = processEngine.processEngineConfiguration as ProcessEngineConfigurationImpl
                 } else if (processEngine == null) {
