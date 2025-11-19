@@ -5,7 +5,7 @@
 [![Slack](https://img.shields.io/badge/chat-Slack-purple)](https://join.slack.com/t/operaton/shared_invite/zt-3id7iv5lz-zT7uGVWLCVNG_zpnAGpq9g)
 
 
-# Oepraton Process Test Coverage
+# Operaton Process Test Coverage
 
 This Operaton community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
 
