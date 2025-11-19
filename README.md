@@ -1,17 +1,17 @@
-[![](https://img.shields.io/badge/Lifecycle-Stable-brightgreen)](https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#stable-)
-[![](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/camunda-community-hub/community)
-![Compatible with: Camunda Platform 7](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%207-26d07c)
-![Compatible with: Camunda Platform 8](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%208-26d07c)
-![Supported Camunda versions](https://img.shields.io/badge/Camunda%20Version-%207.18%20to%207.23%20and%208-orange.svg)
+![build status](https://github.com/operaton/operaton/actions/workflows/build.yml/badge.svg?branch=main)
+[![Maven Central Version](https://img.shields.io/maven-central/v/org.operaton.bpm/operaton-bom-root?color=blue&logo=apachemaven)](https://central.sonatype.com/search?q=org.operaton)
+
+[![Forum](https://img.shields.io/badge/forum-Operaton-green)](https://forum.operaton.org/)
+[![Slack](https://img.shields.io/badge/chat-Slack-purple)](https://join.slack.com/t/operaton/shared_invite/zt-3id7iv5lz-zT7uGVWLCVNG_zpnAGpq9g)
 
 
-![Camunda Logo](docs/assets/img/Favicons-Circle-Colour.png)
+# Oepraton Process Test Coverage
 
-# Camunda Process Test Coverage
-
-This Camunda Platform 7 and Platform 8 community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
+This Operaton community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
 
 ![Coverage report](docs/assets/img/flowcov_coverage_report.png)
+
+It is forked from the Camunda community extension: https://github.com/camunda-community-hub/camunda-process-test-coverage
 
 ## Highlights
 
@@ -21,15 +21,10 @@ This Camunda Platform 7 and Platform 8 community extension **visualises** test p
 
 ## Just use it
 
-* Integrates with all versions of Camunda Platform 7 starting with 7.20.0 and upwards as well as Camunda Platform 8
-* Is continuously checked against the latest Camunda Platform 7 releases (check out our compatibility CI/CD pipeline)
+* Integrates with all versions of Operaton
 * Tested with JDKs 17 and 21 and different operating systems (Windows, Mac and Linux).
-* Supports **JUnit 4.13.1+** (4.11 does not work) or **JUnit 5** for Camunda 7
-* Supports **JUnit 5** for Camunda 8 (uses Zeebe Process Test)
+* Supports **JUnit 5** for Operaton
 * Can be used inside Spring Tests
-
-> [!IMPORTANT]
-> If you're running with a Java version prior to 17 you have to use the old version 2.x (latest 2.8.0)
 
 ## Documentation
 
@@ -37,23 +32,22 @@ If you are interested in further documentation, please check our [Documentation 
 
 ## Installation
 
-Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/camunda-process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/camunda-process-test-coverage-bom/badge.svg" align="right" /></a>
+Add a **Maven test dependency** to your project 
 
-### JUnit5 (Platform 7 or Platform 8)
+### JUnit5
 
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
-  <artifactId>camunda-process-test-coverage-junit5-platform-7</artifactId>
-  <!-- <artifactId>camunda-process-test-coverage-junit5-platform-8</artifactId> -->
-  <version>${camunda-process-test-coverage.version}</version>
+  <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+  <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
 
 ## Configuration
 
-Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camunda.cfg.xml` (only needed for Platform 7)
+Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `operaton.cfg.xml`
 
 ```xml
 <bean id="processEngineConfiguration"
@@ -62,26 +56,13 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 </bean>
 ```
 
-Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension (available for Platform 7 and Platform 8)
+Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension
 
-Either use `@ExtendWith`
-
-Java
-```java
-@ExtendWith(ProcessEngineCoverageExtension.class)
-public class MyProcessTest {}
-```
-
-Kotlin
-```kotlin
-@ExtendWith(ProcessEngineCoverageExtension::class)
-class MyProcessTest
-```
-or `@RegisterExtension`
+ `@RegisterExtension`
 
 If you register the extension on a non-static field, no class coverage and therefore no report will be generated. This is due to the fact, that an instance of the extension will be created per test method.
 
-The extension provides a Builder for programmatic creation, which takes either a path to a configuration resource, a process engine configuration or if nothing is passed uses the default configuration resources path (`camunda.cfg.xml`).
+The extension provides a Builder for programmatic creation, which takes either a path to a configuration resource, a process engine configuration or if nothing is passed uses the default configuration resources path (`operaton.cfg.xml`).
 
 The process engine configuration needs to be configured for test coverage. So use **either** the provided `ProcessCoverageInMemProcessEngineConfiguration`, `SpringProcessWithCoverageEngineConfiguration` or initialize the configuration with `ProcessCoverageConfigurator.initializeProcessCoverageExtensions(configuration)`.
 

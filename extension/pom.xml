@@ -18,9 +18,6 @@
         <module>engine-platform-7</module>
         <module>junit5-common</module>
         <module>junit5-platform-7</module>
-        <!--<module>spring-test-common</module>
-        <module>spring-test-platform-7</module>
-        <module>starter-platform-7</module>-->
         <module>report-generator</module>
     </modules>
 
