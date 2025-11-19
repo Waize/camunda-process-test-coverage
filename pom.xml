@@ -2,13 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.camunda.community</groupId>
-        <artifactId>community-hub-release-parent</artifactId>
-        <version>2.0.1</version>
-        <relativePath />
-    </parent>
-
     <groupId>org.operaton.community.process_test_coverage</groupId>
     <artifactId>operaton-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
@@ -17,11 +10,6 @@
     <name>Operaton Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.
     </description>
-    <url>https://github.com/camunda-community-hub/camunda-process-test-coverage/</url>
-    <issueManagement>
-        <system>github</system>
-        <url>https://github.com/camunda-community-hub/camunda-process-test-coverage/issues</url>
-    </issueManagement>
     <inceptionYear>2025</inceptionYear>
 
     <modules>
