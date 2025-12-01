@@ -5,7 +5,7 @@
     <groupId>org.operaton.community.process_test_coverage</groupId>
     <artifactId>operaton-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Operaton Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.

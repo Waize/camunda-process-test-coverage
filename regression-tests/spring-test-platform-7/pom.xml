@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.operaton.community.process_test_coverage</groupId>
         <artifactId>operaton-process-test-coverage-regression-tests-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>operaton-process-test-coverage-regression-tests-spring-test-platform-7</artifactId>
